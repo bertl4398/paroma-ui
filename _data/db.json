@@ -1,0 +1,112 @@
+{
+    "services": [
+        {
+            "id": "1",
+            "name": "Electronic Health Record (EHR)",
+            "description": "A digital system for storing and managing patient health records securely.",
+            "icon": "electronic-health-record.jpg",
+            "pending": false,
+            "denied": false,
+            "active": true
+        },
+        {
+            "id": "2",
+            "name": "Medical Imaging",
+            "description": "Tools and infrastructure for storing, viewing, and analyzing medical images such as X-rays, MRI scans, and CT scans.",
+            "icon": "medical-imaging.png",
+            "pending": false,
+            "denied": false,
+            "active": true
+        },
+        {
+            "id": "3",
+            "name": "Health Monitoring",
+            "description": "Remote monitoring of vital signs and health data, such as heart rate, blood pressure, and sleep patterns.",
+            "icon": "health-monitoring.png",
+            "pending": false,
+            "denied": true,
+            "active": true
+        },
+        {
+            "id": "4",
+            "name": "Telemedicine",
+            "description": "Remote consultations between healthcare providers and patients through video calls or chat platforms.",
+            "icon": "telemedicine.png",
+            "pending": true,
+            "denied": false,
+            "active": false
+        },
+        {
+            "id": "5",
+            "name": "Prescription Management",
+            "description": "Management and tracking of prescription medications, including ordering refills, receiving reminders, and reviewing medication instructions.",
+            "icon": "prescription-mgmt.jpg",
+            "pending": true,
+            "denied": false,
+            "active": false
+        },
+        {
+            "id": "6",
+            "name": "Laboratory Information System (LIS)",
+            "description": "Management and tracking of laboratory tests, including specimen tracking, test results, and data analysis.",
+            "icon": "laboratory-information-system.jpg",
+            "pending": true,
+            "denied": false,
+            "active": false
+        },
+        {
+            "id": "7",
+            "name": "Health Analytics",
+            "description": "Data analytics techniques to extract insights from health data, enabling population health management and research.",
+            "icon": "health-analytics.png",
+            "pending": false,
+            "denied": false,
+            "active": true
+        },
+        {
+            "id": "8",
+            "name": "Appointment Scheduling",
+            "description": "Scheduling appointments with healthcare providers, viewing availability, and receiving appointment reminders.",
+            "icon": "appointment-scheduling.svg",
+            "pending": true,
+            "denied": false,
+            "active": true
+        },
+        {
+            "id": "9",
+            "name": "Health Education",
+            "description": "Providing educational resources and information on various health topics for informed decision-making.",
+            "icon": "health-education.png",
+            "pending": false,
+            "denied": false,
+            "active": false
+        },
+        {
+            "id": "10",
+            "name": "Medication Reminder",
+            "description": "Automated reminders for medication intake, dosage instructions, and refill notifications.",
+            "icon": "medication-reminder.png",
+            "pending": false,
+            "denied": false,
+            "active": true
+        },
+        {
+            "id": "11",
+            "name": "Chronic Disease Management",
+            "description": "Tools and resources to help manage chronic conditions such as diabetes, asthma, or hypertension.",
+            "icon": "chronic-disease-mgmt.png",
+            "pending": false,
+            "denied": false,
+            "active": false
+        },
+        {
+            "id": "12",
+            "name": "Health and Wellness Tracking",
+            "description": "Tracking exercise, nutrition, sleep patterns, and other wellness-related activities for personal health management.",
+            "icon": "health-and-wellness-tracking.svg",
+            "pending": false,
+            "denied": true,
+            "active": true
+        }
+    ]
+}

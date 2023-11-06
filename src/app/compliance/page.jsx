@@ -26,7 +26,7 @@ const Compliance = () => {
   return (
     <>
       <h1 className="text-4xl text-nav font-semibold">Compliance Check</h1>
-      <Separator className="mb-4" />
+      <Separator className="mt-2 mb-4" />
       <div className="grid grid-cols-3 gap-8">
         <Card>
           <CardHeader>

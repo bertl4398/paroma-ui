@@ -5,6 +5,7 @@ import {
   faHeartPulse,
   faHome,
   faLegal,
+  faListCheck,
   faMessage,
   faNoteSticky,
   faNotesMedical,
@@ -12,6 +13,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
+import { Separator } from "./ui/separator";
 
 const Sidebar = () => {
   return (
@@ -20,24 +22,6 @@ const Sidebar = () => {
       <div className="my-8 hover:bg-slate-800">
         <Link
           href="/"
-          className="flex flex-row justify-start content-center mx-2"
-        >
-          <FontAwesomeIcon icon={faDashboard} className="py-1" />
-          <p className="mx-2">Dashboard</p>
-        </Link>
-      </div>
-      <div className="my-8 hover:bg-slate-800">
-        <Link
-          href="/services"
-          className="flex flex-row justify-start content-center mx-2"
-        >
-          <FontAwesomeIcon icon={faHeartPulse} className="py-1" />
-          <p className="mx-2">Services</p>
-        </Link>
-      </div>
-      <div className="my-8 hover:bg-slate-800">
-        <Link
-          href="/consent"
           className="flex flex-row justify-start content-center mx-2"
         >
           <FontAwesomeIcon icon={faHandshake} className="py-1" />
@@ -60,6 +44,15 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faLegal} className="py-1" />
           <p className="mx-2">Compliance</p>
+        </Link>
+      </div>
+      <div className="my-8 hover:bg-slate-800">
+        <Link
+          href="/services"
+          className="flex flex-row justify-start content-center mx-2"
+        >
+          <FontAwesomeIcon icon={faHeartPulse} className="py-1" />
+          <p className="mx-2">Services</p>
         </Link>
       </div>
     </nav>

@@ -34,8 +34,8 @@ const Home = async () => {
 
   return (
     <>
-      <h1 className="text-4xl text-nav font-semibold">Dashboard</h1>
-      <Separator className="mb-4" />
+      <h1 className="text-4xl text-nav font-semibold">Consent Management</h1>
+      <Separator className="mt-2 mb-4" />
       <div className="grid grid-cols-3 gap-8">
         <Card className="bg-green-400">
           <CardHeader>
@@ -102,20 +102,17 @@ const Home = async () => {
                 {!service.denied && !service.pending && (
                   <FontAwesomeIcon
                     icon={faCircleCheck}
-                    className="text-slate-800 text-green-400"
+                    className="text-green-400"
                   />
                 )}
                 {service.pending && (
                   <FontAwesomeIcon
                     icon={faCirclePause}
-                    className="text-slate-800 text-yellow-400"
+                    className="text-yellow-400"
                   />
                 )}
                 {service.denied && (
-                  <FontAwesomeIcon
-                    icon={faBan}
-                    className="text-slate-800 text-red-400"
-                  />
+                  <FontAwesomeIcon icon={faBan} className="text-red-400" />
                 )}
               </CardFooter>
             </Card>

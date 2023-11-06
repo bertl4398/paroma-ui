@@ -5,6 +5,7 @@ import Sidebar from "@/components/sidebar";
 
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Toaster } from "@/components/ui/toaster";
 
 config.autoAddCss = false;
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
             <div className="mt-4">{children}</div>
           </main>
         </div>
+        <Toaster />
       </body>
     </html>
   );

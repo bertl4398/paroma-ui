@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
           <main className="flex flex-col w-screen p-8">
             <Nav />
             <div className="mt-4">{children}</div>
+            <Toaster />
           </main>
         </div>
-        <Toaster />
       </body>
     </html>
   );

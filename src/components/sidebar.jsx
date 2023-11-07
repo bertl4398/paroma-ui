@@ -46,6 +46,7 @@ const Sidebar = () => {
           <p className="mx-2">Compliance</p>
         </Link>
       </div>
+      <Separator />
       <div className="my-8 hover:bg-slate-800">
         <Link
           href="/services"

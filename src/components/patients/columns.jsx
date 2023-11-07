@@ -3,6 +3,7 @@
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -60,6 +61,7 @@ const columns = [
   },
   {
     id: "actions",
+    header: "Actions",
     cell: ({ row }) => {
       const patient = row.original;
 
@@ -72,13 +74,6 @@ const columns = [
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>Actions</DropdownMenuLabel>
-            <DropdownMenuItem
-              onClick={() => navigator.clipboard.writeText(patient.id)}
-            >
-              Copy patient ID
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
             <DropdownMenuItem>View patient</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

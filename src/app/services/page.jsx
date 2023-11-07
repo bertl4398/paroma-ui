@@ -18,6 +18,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { faCogs, faPencil } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 async function getServices() {
   const result = await fetch("http://localhost:4000/services");
@@ -60,7 +61,9 @@ const Services = async () => {
                     <MenubarItem>Show Details</MenubarItem>
                     <MenubarItem>Edit Service</MenubarItem>
                     <MenubarSeparator />
-                    <MenubarItem>Edit Consent</MenubarItem>
+                    <MenubarItem>
+                      <Link href={`/services/${service.id}`}> Add Patient</Link>
+                    </MenubarItem>
                   </MenubarContent>
                 </MenubarMenu>
               </Menubar>
